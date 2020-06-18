@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Security.Cryptography;
 
 namespace AlgorithmsLibrary
 {
     public class LeetCode
     {
+
+        
         // Problem 1
         // Given an array of integers, return indices of the two numbers such that they add up to a specific target.
         // You may assume that each input would have exactly one solution, and you may not use the same element twice.
@@ -75,11 +78,11 @@ namespace AlgorithmsLibrary
             string prefix;
             string lastPrefix = "";
 
-            for (int prefixLength = 0; prefixLength < stringList[0].Length-1; prefixLength++)
+            for (int prefixLength = 1; prefixLength <= stringList[0].Length; prefixLength++)
             {
                 prefix = stringList[0].Substring(0, prefixLength);
 
-                for (int e = 1; e < stringList.Count-1; e++)
+                for (int e = 1; e < stringList.Count; e++)
                 {
                     if (!stringList[e].StartsWith(prefix))
                     {
@@ -87,10 +90,10 @@ namespace AlgorithmsLibrary
                     }
                 }
 
-                lastPrefix = prefix;   
+                lastPrefix = prefix;
             }
 
-            // if you get here, the entire string is a common prefix
+            // if you get here, then the entire string matched
             return lastPrefix;
         }
     }
