@@ -3,6 +3,7 @@ using AlgorithmsLibrary;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
 
 namespace AlgorithmsLibrary.Tests
 {
@@ -81,6 +82,17 @@ namespace AlgorithmsLibrary.Tests
         {
             bool testIsPalindrome = LeetCode.IntIsPalindrome(startInt);
             Assert.AreEqual(expectedIsPalindrome, testIsPalindrome);
+        }
+
+        [DataTestMethod()]
+        [DataRow(new string[]{"blah", "blah2" }, "blah")]
+        [DataRow(new string[] { "asdasd", "blah2" }, "")]
+        [DataRow(new string[] { "blah4", "blah4" }, "blah4")]
+        public void CommonStringPrefixTest(string[] stringArray, string expectedCommonPrefix)
+        {
+            List<string> stringList = stringArray.ToList();
+            string testCommonPrefix = LeetCode.LongestCommonStringPrefix(stringList);
+            Assert.AreEqual(expectedCommonPrefix, testCommonPrefix);
         }
     }
 }

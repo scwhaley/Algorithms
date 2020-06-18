@@ -72,7 +72,26 @@ namespace AlgorithmsLibrary
 
         public static string LongestCommonStringPrefix(List<string> stringList)
         {
+            string prefix;
+            string lastPrefix = "";
 
+            for (int prefixLength = 0; prefixLength < stringList[0].Length-1; prefixLength++)
+            {
+                prefix = stringList[0].Substring(0, prefixLength);
+
+                for (int e = 1; e < stringList.Count-1; e++)
+                {
+                    if (!stringList[e].StartsWith(prefix))
+                    {
+                        return lastPrefix;
+                    }
+                }
+
+                lastPrefix = prefix;   
+            }
+
+            // if you get here, the entire string is a common prefix
+            return lastPrefix;
         }
     }
 }
