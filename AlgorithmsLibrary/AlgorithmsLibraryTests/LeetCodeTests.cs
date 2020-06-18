@@ -73,5 +73,14 @@ namespace AlgorithmsLibrary.Tests
             int reversedInt = LeetCode.ReverseInteger(startInt);
             Assert.AreEqual(0, reversedInt);
         }
+
+        [DataTestMethod()]
+        [DataRow(12321, true)]
+        [DataRow(12345, false)]
+        public void IntIsPalindromTest(int startInt, bool expectedIsPalindrome)
+        {
+            bool testIsPalindrome = LeetCode.IntIsPalindrome(startInt);
+            Assert.AreEqual(expectedIsPalindrome, testIsPalindrome);
+        }
     }
 }
