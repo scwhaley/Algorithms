@@ -47,5 +47,31 @@ namespace AlgorithmsLibrary.Tests
 
             Assert.IsTrue(caughtExceptionBool);
         }
+
+        [TestMethod()]
+        public void ReversePostitiveIntegerTest()
+        {
+            int startInt = 342;
+            int reversedInt = LeetCode.ReverseInteger(startInt);
+            Assert.AreEqual(243, reversedInt);
+        }
+
+        [TestMethod()]
+        public void ReverseNegativeIntegerTest()
+        {
+            int startInt = -342;
+            int reversedInt = LeetCode.ReverseInteger(startInt);
+            Assert.AreEqual(-243, reversedInt);
+        }
+
+        // This test should cause overflow
+        [DataTestMethod()]
+        [DataRow(int.MinValue)]
+        [DataRow(int.MaxValue)]
+        public void ReverseNegativeIntMinTest(int startInt)
+        {
+            int reversedInt = LeetCode.ReverseInteger(startInt);
+            Assert.AreEqual(0, reversedInt);
+        }
     }
 }

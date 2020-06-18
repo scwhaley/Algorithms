@@ -23,5 +23,28 @@ namespace AlgorithmsLibrary
 
             throw new ArgumentException("The supplied integer array does not have 2 integers that add to the desired sum");
         }
+
+        // Given a 32-bit signed integer, reverse digits of an integer.
+        public static int ReverseInteger(int startInt)
+        {
+            int reversedInt = 0;
+
+            while (startInt != 0)
+            {
+                try
+                {
+                    // C# does not check for overflow/underflow exceptions by default. Alternatively could check for sign change of answer due to signed bit changing.
+                    checked { reversedInt = reversedInt * 10 + (startInt % 10); }
+                }
+                catch (OverflowException)
+                {
+                    return 0;
+                }
+
+                startInt /= 10;
+            }
+
+            return reversedInt;
+        }
     }
 }
