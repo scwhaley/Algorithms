@@ -1,0 +1,59 @@
+[33mcommit 1a2a32056d33195d3de17199d8a2626cd4513fa8[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Spencer <Spencer@SPENCER>
+Date:   Fri Jun 19 15:53:33 2020 -0700
+
+    Did not stage all commit files
+
+[33mcommit 8c5339fc8f1ca012742ce69dca676738ddc5a4c2[m
+Author: Spencer <Spencer@SPENCER>
+Date:   Fri Jun 19 15:50:34 2020 -0700
+
+    Added list merge method. Removed build folders from git ignore file
+
+[33mcommit 2bd0b05a3c6fb862780e65c0a3205ef6c0800d82[m
+Author: Spencer <Spencer@SPENCER>
+Date:   Thu Jun 18 16:55:41 2020 -0700
+
+    Fixed iteration count bug that stemmed from length/index mismatch
+
+[33mcommit f6a4fd8b9a8ceeeccb21239294424aa50cff9086[m
+Author: Spencer <Spencer@SPENCER>
+Date:   Thu Jun 18 16:39:27 2020 -0700
+
+    Started implementing common string prefix method
+
+[33mcommit 5f537b0ccf8cfb2e54ce2183c2644ff7b914c672[m
+Author: Spencer <Spencer@SPENCER>
+Date:   Wed Jun 17 17:36:18 2020 -0700
+
+    Added IntIsPalindrom method and test. Started adding LongestCommonStringPrefix but not logic yet.
+
+[33mcommit 68560e4eaf73712a3c1bac0f6b16a3d3f4fa778e[m
+Author: Spencer <Spencer@SPENCER>
+Date:   Wed Jun 17 17:22:15 2020 -0700
+
+    Added ReverseInteger method and 3 tests
+
+[33mcommit b9a5a12a10b8125d512a3d804bafb1fffef431d7[m
+Author: Spencer <Spencer@SPENCER>
+Date:   Mon Jun 15 20:35:24 2020 -0700
+
+    Removed Test Comment
+
+[33mcommit 3f13d7e6ccb38a56ba26626581d50836d52d947c[m
+Author: Spencer <Spencer@SPENCER>
+Date:   Mon Jun 15 20:34:19 2020 -0700
+
+    test comment
+
+[33mcommit 04f4721310e7c1c093bc26538dda205180659766[m[33m ([m[1;31morigin/reverse-integer[m[33m)[m
+Author: Spencer <Spencer@SPENCER>
+Date:   Sun Jun 14 15:58:41 2020 -0700
+
+    Add files
+
+[33mcommit 8a7cad082524b5a1295d1a68a7b4a91ab3f8014f[m
+Author: Spencer <Spencer@SPENCER>
+Date:   Sun Jun 14 15:56:01 2020 -0700
+
+    Added TwoSum algorithm and tests. Passes 2/2 tests.
