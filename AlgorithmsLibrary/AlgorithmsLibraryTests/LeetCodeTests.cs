@@ -94,5 +94,19 @@ namespace AlgorithmsLibrary.Tests
             string testCommonPrefix = LeetCode.LongestCommonStringPrefix(stringList);
             Assert.AreEqual(expectedCommonPrefix, testCommonPrefix);
         }
+
+        [TestMethod()]
+        public void MergeListTests()
+        {
+            List<List<int>> listOfIntLists = new List<List<int>>();
+            listOfIntLists.Add(new List<int> { 0, 2, 4, 5, 6, 10, 11 });
+            listOfIntLists.Add(new List<int> { -1, 1, 4, 7, 3, 2, 1 });
+            listOfIntLists.Add(new List<int> { -10, 0, 15 });
+            List<int> sortedList = LeetCode.MergeLists(listOfIntLists);
+            List<int> expectedSortedList = new List<int> { -10, -1, 0, 0, 1, 1, 2, 2, 3, 4, 4, 5, 6, 7, 10, 11, 15 };
+            bool result = Enumerable.SequenceEqual(sortedList, expectedSortedList);
+
+            Assert.IsTrue(result);
+        }
     }
 }

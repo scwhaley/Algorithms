@@ -72,7 +72,6 @@ namespace AlgorithmsLibrary
         // Problem 14
         // Write a function to find the longest common prefix string amongst an array of strings.
         // If there is no common prefix, return an empty string "".
-
         public static string LongestCommonStringPrefix(List<string> stringList)
         {
             string prefix;
@@ -89,12 +88,48 @@ namespace AlgorithmsLibrary
                         return lastPrefix;
                     }
                 }
-
                 lastPrefix = prefix;
             }
 
             // if you get here, then the entire string matched
             return lastPrefix;
+        }
+
+        // Problem 21 - Extended
+        public static List<int> MergeLists(List<List<int>> listOfSortedLists)
+        {
+            List<int> mergedList = listOfSortedLists[0];
+            mergedList.Sort();
+
+            for (int i = 1; i < listOfSortedLists.Count; i++)
+            {
+                for (int e = 0; e < listOfSortedLists[i].Count; e++)
+                {
+                    for (int k = 0; k < mergedList.Count; k++)
+                    {
+                        // 2 conditions. Starting at the least sorted value, if unsorted value is less than the sorted value,
+                        // then insert before the sorted value.
+                        // If the unsorted value was bigger than all the sorted values, then append to end.
+                        if (listOfSortedLists[i][e]<= mergedList[k])
+                        {
+                            mergedList.Insert(k, listOfSortedLists[i][e]);
+                            break;
+                        }
+
+                        if (k==mergedList.Count-1)
+                        {
+                            mergedList.Add(listOfSortedLists[i][e]);
+                            break;
+                        }
+                    }
+                }
+            }
+
+            foreach (var item in mergedList)
+            {
+                File.AppendAllText(@"C:\Temp\Debug.txt", $"{item}");
+            }
+            return mergedList;
         }
     }
 }

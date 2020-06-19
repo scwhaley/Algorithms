@@ -1,0 +1,9 @@
+C:\Users\Spencer\Source\Repos\scwhaley\Algorithms\AlgorithmsLibrary\AlgorithmsLibrary\bin\Debug\netcoreapp3.1\AlgorithmsLibrary.deps.json
+C:\Users\Spencer\Source\Repos\scwhaley\Algorithms\AlgorithmsLibrary\AlgorithmsLibrary\bin\Debug\netcoreapp3.1\AlgorithmsLibrary.dll
+C:\Users\Spencer\Source\Repos\scwhaley\Algorithms\AlgorithmsLibrary\AlgorithmsLibrary\bin\Debug\netcoreapp3.1\AlgorithmsLibrary.pdb
+C:\Users\Spencer\Source\Repos\scwhaley\Algorithms\AlgorithmsLibrary\AlgorithmsLibrary\obj\Debug\netcoreapp3.1\AlgorithmsLibrary.csprojAssemblyReference.cache
+C:\Users\Spencer\Source\Repos\scwhaley\Algorithms\AlgorithmsLibrary\AlgorithmsLibrary\obj\Debug\netcoreapp3.1\AlgorithmsLibrary.AssemblyInfoInputs.cache
+C:\Users\Spencer\Source\Repos\scwhaley\Algorithms\AlgorithmsLibrary\AlgorithmsLibrary\obj\Debug\netcoreapp3.1\AlgorithmsLibrary.AssemblyInfo.cs
+C:\Users\Spencer\Source\Repos\scwhaley\Algorithms\AlgorithmsLibrary\AlgorithmsLibrary\obj\Debug\netcoreapp3.1\AlgorithmsLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Spencer\Source\Repos\scwhaley\Algorithms\AlgorithmsLibrary\AlgorithmsLibrary\obj\Debug\netcoreapp3.1\AlgorithmsLibrary.dll
+C:\Users\Spencer\Source\Repos\scwhaley\Algorithms\AlgorithmsLibrary\AlgorithmsLibrary\obj\Debug\netcoreapp3.1\AlgorithmsLibrary.pdb
